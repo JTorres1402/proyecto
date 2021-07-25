@@ -1,0 +1,148 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    background: linear-gradient(#798386, #3a738c);
+}
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box .inicio img{
+    width: 100px;
+    display:block;
+    margin:auto;
+}
+
+.login-box .inicio h1 {
+    margin: 20px 10px;
+    padding: 0px;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box h1 {
+    margin: 0px 0px;
+    padding: 0px;
+    color: #fff;
+    text-align: left;
+}
+
+.login-box h6 {
+    margin: 0px 0 15px;
+    padding: 0;
+    color: #fff;
+    text-align: left;
+    font-size: 12px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .link a{
+    position: relative;
+    margin: 15px 0 20px;
+    padding: 0;
+    color: white;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+}
+
+.login-box .link a:hover {
+    border-bottom: 1px solid;
+    color: red;
+  }
+
+.login-box .link a:active {
+    color: red;
+  }
+
+.login-box .label input{
+    position: relative;
+    margin: 0px 0 20px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+.login-box .label label{
+    position: relative;
+    margin: 0px 0 20px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .link label{
+    position: relative;
+    margin: 20px 0 30px;
+    padding: 9px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: while;
+    font-size: 12px;
+}
+
+.login-box .button input {
+    position: relative;
+    margin: 10px 0 0px;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #3a738c;
+    border-radius: 6px;
+    border: 2px solid #3a738c;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+.login-box .button input:hover{
+    color:black;
+    background-color: #ffffff;
+    border:2px solid #ffffff;
+  }
