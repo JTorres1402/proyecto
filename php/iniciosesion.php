@@ -31,6 +31,6 @@ if (($nr == 1)&&(password_verify($pass,$buscar_pass['contraseña']))) {
     $_SESSION["usuario"] = $buscar_pass;
     header("Location: inicio.php");  
 }else{
-    header("Location: /proyecto/index.html");
+    header("Location: /proyecto/proyecto/index.html");
 }
 ?>
