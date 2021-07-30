@@ -29,7 +29,7 @@ if ($query) {
 if (($nr == 1)&&(password_verify($pass,$buscar_pass['contraseña']))) {
     session_start();
     $_SESSION["usuario"] = $buscar_pass;
-    header("Location: /proyecto/inicio.php");  
+    header("Location: /proyecto/php/inicio.php");  
 }else{
     header("Location: /proyecto/index.html");
 }
