@@ -1,7 +1,8 @@
 <?php
-    session_start();
+session_start();
+echo $_SESSION["nombre"];
     if(empty($_SESSION["usuario"])) {
-        header("Location: index.html");
+        header("Location: /proyecto/index.html");
         exit();
     }
 ?>
@@ -24,7 +25,8 @@
                     <img src="/proyecto/img/logo.png" alt="" style="width: 150px; border-radius: 50%;">
                 </a>
             </header>
-            <nav class="dashboard-nav-list">
+            <div class="nombre"><p><?php echo $_SESSION['nombre']?></p></div>      
+            <nav class="dashboard-nav-list">    
                 <div class="nav-item-divider"></div>
                 <a href="inicio.php" class="dashboard-nav-item"><i class="fas fa-home"></i>Inicio</a>
                 <a href="estado.php" class="dashboard-nav-item"><i class="fas fa-clipboard-list"></i>Estado</a>
@@ -41,7 +43,7 @@
                 <div class='container'>
                     <div class='card'>
                         <div class='card-header'>
-                            <h1>Donde nos encontramos</h1>
+                            <h1>¿Donde nos encontramos?</h1>
                         </div>
                         <div class='card-body'>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4657.744900311112!2d-74.78686395756425!3d10.98744631266488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sco!4v1627607059295!5m2!1ses!2sco" width="700" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

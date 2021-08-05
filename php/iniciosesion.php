@@ -20,8 +20,6 @@ $buscar_pass = mysqli_fetch_array($query);
 
 if ($query) {
     while ($row = $query->fetch_array()) {
-        $nombre = $row['nombre'];
-        $apellido = $row['apellido'];
         $passs = $row['contraseña'];
     }
 }
@@ -29,6 +27,7 @@ if ($query) {
 if (($nr == 1)&&(password_verify($pass,$buscar_pass['contraseña']))) {
     session_start();
     $_SESSION["usuario"] = $buscar_pass;
+    $_SESSION["nombre"] = $buscar_pass[1]." ".$buscar_pass[2];
     header("Location: /proyecto/php/inicio.php");  
 }else{
     header("Location: /proyecto/index.html");

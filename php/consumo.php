@@ -13,7 +13,7 @@
     <div class='dashboard'>
         <div class="dashboard-nav">
             <header>
-                <a class="menu-toggle"></a><a href="home.php" class="brand-logo">
+                <a class="menu-toggle"></a><a href="inicio.php" class="brand-logo">
                     <img src="/proyecto/img/logo.png" alt="" style="width: 150px; border-radius: 50%;">
                 </a>
             </header>
