@@ -21,7 +21,7 @@ $pass2 = $_POST["pass2"];
 if ($pass != $pass2) {
     echo "<script> 
     alert('Error, las contraseñas deben de ser iguales');
-    window.location='registro.html' 
+    window.location='/proyecto/registro.html' 
     </script>";
 }
 
@@ -35,7 +35,7 @@ if ($nom == null and $pass == null) {
         echo "
         <script> 
         alert('Registro realizado correctamente');
-        window.location='inicio.html' 
+        window.location='/proyecto/inicio.html' 
         </script>";
         }
     }
