@@ -35,7 +35,7 @@ if ($nom == null and $pass == null) {
         echo "
         <script> 
         alert('Registro realizado correctamente');
-        window.location='/proyecto/inicio.html' 
+        window.location='/proyecto/index.html' 
         </script>";
         }
     }
